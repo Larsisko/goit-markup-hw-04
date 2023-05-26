@@ -1,4 +1,14 @@
 @import "./modern-normalize.css";
+* {
+	margin: 0;
+	padding: 0;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body {
   font: color #212121;
   background-color: var(--section-color);
@@ -450,3 +460,9 @@ footer {
   width: 121px;
   height: 38px;
 }
+/*icony*/
+.menu-icon {
+  fill: currentColor;
+  margin-right: 10px;
+  stroke: black;
+  stroke-width:1px;

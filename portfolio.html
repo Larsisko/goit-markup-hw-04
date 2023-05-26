@@ -22,6 +22,13 @@
     </style>
   </head>
   <body>
+    <svg
+      aria-hidden="true"
+      style="position: absolute; width: 0; height: 0; overflow: hidden"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    ></svg>
     <header class="header-border" id="navi">
       <div class="container header-flex">
         <a class="logo" href="./index.html"
@@ -35,12 +42,22 @@
             <li><a class="menu_item" href="#kontakt">Kontakt</a></li>
           </ul>
         </nav>
-        <div class="menu-address">
-          <a class="mail" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-          <a class="tel" href="tel:+48111111111">+48 111 111 111</a>
-        </div>
+        <ul class="menu-address">
+          <li>
+            <a class="mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="tel" href="tel:+48111111111">
+              <svg class="menu-icon" width="10" height="16">
+                <use hfer="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+
+              +48 111 111 111</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main id="main">
