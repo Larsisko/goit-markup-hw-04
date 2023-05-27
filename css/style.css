@@ -3,6 +3,15 @@
   margin: 0;
   padding: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 *,
 *::before,
 *::after {
@@ -224,8 +233,12 @@ footer {
   color: #2196f3;
 }
 .logo-footer-container {
-  margin-left: 215px;
-  padding-top: 60px;
+  padding-top: 51px;
+  height: 100%;
+}
+.footer-container {
+  display: flex;
+  gap: 70px;
 }
 
 .studio-header {
@@ -310,7 +323,7 @@ footer {
   padding-right: 0px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+
   gap: 30px;
   margin-top: 50px;
   justify-content: space-between;
@@ -507,7 +520,6 @@ footer {
   justify-content: center;
 }
 .team-icon {
-  fill: var(--icon-team-color);
 }
 .team-icon-link {
   width: 100%;
@@ -515,6 +527,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: var(--icon-team-color);
 }
 .team-icon:hover {
 }
@@ -524,4 +537,68 @@ footer {
   background-color: var(--icon-team-hover-color);
   fill: var(--hover-icon-color-team);
   border-radius: 50%;
+}
+.customers-list {
+  margin-top: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-between;
+}
+.customers-icon-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  color: var(--icon-team-color);
+  border: 1px solid currentColor;
+  fill: currentColor;
+  justify-content: center;
+  align-items: center;
+}
+.customers-icon {
+}
+.customers-icon-link:hover,
+.customers-icon-link:focus {
+  border-color: var(--icon-team-hover-color);
+  fill: var(--icon-team-hover-color);
+}
+.social-link-container {
+  width: 206px;
+  height: 80px;
+  margin-top: 63px;
+}
+.social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-social-list {
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 20px;
+}
+.footer-social-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  till: var(--hover-icon-color-team);
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.team-icon-footer {
+  fill: var(--hover-icon-color-team);
+}
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+  background-color: var(--icon-team-hover-color);
 }
